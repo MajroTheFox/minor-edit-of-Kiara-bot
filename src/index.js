@@ -1104,6 +1104,22 @@ client.on(Events.MessageCreate, async (message) => {
         return;
     }
 
+	if (message.content.toLowerCase().includes('Israel')) { //don't. just don't.
+        await message.reply("Majro! Someone mentioned Israel, Majro! " +
+            "Go get them, Majro! " +
+            "Show them! " +
+            "<@708956399945646160>");
+        return;
+    }
+
+	if (message.content.toLowerCase().includes('67')) { //don't. just don't.
+        await message.reply("Cee! " +
+            "Cee, wake up! " +
+            "Six seven! " +
+            "<@917355352851353610>");
+        return;
+    }
+
     if (message.mentions.users.has(client.user.id)) { //someone pinged the bot
         let responseArray = BOT_PING_RESPONSES;
         
